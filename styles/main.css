@@ -1,0 +1,21 @@
+h1, h2, h3, h4, h5, h6 {
+    font-weight:normal;
+}
+
+html {
+    font-family:arial;
+}
+
+#line {
+    width:500px;
+    padding:1px;
+    background:gray;
+}
+
+#projects {
+    padding:5px;
+}
+
+#projectslist {
+    padding:5px;
+}
