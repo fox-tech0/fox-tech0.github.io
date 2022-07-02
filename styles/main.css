@@ -1,21 +1,28 @@
-h1, h2, h3, h4, h5, h6 {
-    font-weight:normal;
+/* 
+    Dark Theme
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+h1,h2,h3,h4,h5,h6 { 
+    font-weight:normal;   
 }
 
 html {
-    font-family:arial;
+    font-family: 'Raleway', sans-serif;
+    background:black;
+    color:white;
 }
 
-#line {
-    width:500px;
-    padding:1px;
-    background:gray;
+a {
+    color:white;
 }
 
-#projects {
-    padding:5px;
+a:hover {
+    cursor:pointer;
+    text-decoration:underline;
 }
 
-#projectslist {
-    padding:5px;
+a:visited {
+    color:white;
 }
