@@ -1,28 +1,147 @@
-/* 
-    Dark Theme
-*/
-
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
-
-h1,h2,h3,h4,h5,h6 { 
-    font-weight:normal;   
-}
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap');
+@import url(https://ttf.jaxeltheaxel.repl.co/vcr.css);
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
 
 html {
+	background:#32353d;
+    padding:5px;
     font-family: 'Raleway', sans-serif;
-    background:black;
     color:white;
 }
 
-a {
+.hi {
+    font-weight:normal;
+    background: url("https://c.tenor.com/ajDfoSB-_TwAAAAM/spinning-background.gif") no-repeat center center fixed; 
+    background-size:cover;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size:40px;
+    transition:500ms;
+    transition-timing-function: ease;
+}
+
+.title {
+    color:#5555dd;
+    font-weight:normal;
+    font-size:50px;
+    transition:500ms;
+}
+
+.hi:hover {
+    font-size:60px;
+}
+
+.fox-tech {
+    background: url('https://bit.ly/3yvVeR6') no-repeat center center fixed;
+    background-size:cover;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color:transparent;
+    font-size:inherit;
+    transition:500ms;
+    -webkit-text-transition:500ms;
+    -webkit-text-fill-transition:500ms;
+}
+
+.fox-tech:hover {
+    color:white;
+    -webkit-text-fill-color:white;
+}
+
+.title:hover {
+    cursor:normal;
+    font-size:55px;
+    padding:5px;
+}
+
+.codeblock {
+    font-family: 'Nanum Gothic Coding', monospace;
+    padding:5px;
+    background:#82826F;
+    border-radius:10px;
+}
+
+.keyword {
+    color:#FF6961;
+}
+
+.string {
+    color:#C1E1C1;
+}
+
+.string::before{content:'"';}
+.string::after{content:'"';}
+
+.comment {
+    color:#8C92AC;
+}
+
+.reset {
     color:white;
 }
 
-a:hover {
-    cursor:pointer;
-    text-decoration:underline;
+.list { color: #F8C8DC; }
+.list::before { content:'[' }
+.list::after { content:']'; }
+
+.nocat {
+     color:#CFCFC4;
 }
 
-a:visited {
-    color:white;
+.indent::before {
+    content:"\00B7\00B7\00B7";
+}
+.indent::after {
+    content:"\00B7\00B7";
+}
+
+.indent {
+    opacity:0.5;
+}
+
+.undefined {
+    color:#FAC898;
+}
+
+/*.font-change {*/
+    /*animation:fontchange 1s infinite;*/
+/*}*/
+
+@keyframes fontchange {
+    1% {
+        font-family:arial;
+    }
+    25% {
+        font-family:courier;
+    }
+    50% {
+        font-family:'Nanum Gothic Coding', monospace;
+    }
+    75% {
+        font-family:vcr;
+    }
+    100% {
+        font-family: 'Monoton', cursive;
+    }
+}
+
+.spoiler {
+  background: #333333;
+  border-radius: 0.2em;
+  color: transparent;
+}
+
+.spoiler:target {
+  background: transparent;
+  color: inherit;
+}
+
+.spoiler::before, .spoiler::after {
+    /*clip-path: inset(100%);*/
+    clip: rect(1px, 1px, 1px, 1px);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
 }
